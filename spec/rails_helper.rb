@@ -37,7 +37,8 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr'
   c.hook_into :webmock
   c.configure_rspec_metadata!
-  c.filter_sensitive_data('<API_KEY>') { ENV['yelp_api_key'] }
+  c.filter_sensitive_data('<MAPQUEST_KEY>') { ENV['mapquest_api_key'] }
+  c.filter_sensitive_data('<OPENWEATHER_KEY>') { ENV['open_weather_api_key'] }
   c.default_cassette_options = {
     match_requests_on: %i[method host path]
   }
