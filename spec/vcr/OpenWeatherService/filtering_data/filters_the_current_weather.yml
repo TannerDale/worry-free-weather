@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sat, 13 Nov 2021 21:28:08 GMT
+      - Sat, 13 Nov 2021 21:28:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -38,7 +38,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":30.265,"lon":-97.7466,"timezone":"America/Chicago","timezone_offset":-21600,"current":{"dt":1636838888,"sunrise":1636808115,"sunset":1636846535,"temp":70.61,"feels_like":68.83,"pressure":1021,"humidity":31,"dew_point":38.55,"uvi":2.16,"clouds":75,"visibility":10000,"wind_speed":1.99,"wind_deg":90,"wind_gust":5.99,"weather":[{"id":803,"main":"Clouds","description":"broken
+      string: '{"lat":30.265,"lon":-97.7466,"timezone":"America/Chicago","timezone_offset":-21600,"current":{"dt":1636838889,"sunrise":1636808115,"sunset":1636846535,"temp":70.61,"feels_like":68.83,"pressure":1021,"humidity":31,"dew_point":38.55,"uvi":2.16,"clouds":75,"visibility":10000,"wind_speed":1.99,"wind_deg":90,"wind_gust":5.99,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}]},"hourly":[{"dt":1636837200,"temp":70.61,"feels_like":68.83,"pressure":1021,"humidity":31,"dew_point":38.55,"uvi":2.16,"clouds":75,"visibility":10000,"wind_speed":3.36,"wind_deg":170,"wind_gust":4.52,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"pop":0},{"dt":1636840800,"temp":70.18,"feels_like":68.25,"pressure":1021,"humidity":29,"dew_point":36.48,"uvi":0.94,"clouds":60,"visibility":10000,"wind_speed":5.08,"wind_deg":172,"wind_gust":6.35,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"pop":0},{"dt":1636844400,"temp":68.81,"feels_like":66.76,"pressure":1021,"humidity":29,"dew_point":35.29,"uvi":0.23,"clouds":45,"visibility":10000,"wind_speed":6.96,"wind_deg":161,"wind_gust":8.21,"weather":[{"id":802,"main":"Clouds","description":"scattered
@@ -96,5 +96,5 @@ http_interactions:
         rain","icon":"10d"}],"clouds":77,"pop":0.63,"rain":1.82,"uvi":4},{"dt":1637344800,"sunrise":1637326820,"sunset":1637364774,"moonrise":1637365920,"moonset":1637327520,"moon_phase":0.5,"temp":{"day":63.88,"min":56.5,"max":66.11,"night":63.72,"eve":64.08,"morn":57.06},"feels_like":{"day":62.78,"night":63.09,"eve":63.43,"morn":55.62},"pressure":1027,"humidity":60,"dew_point":49.12,"wind_speed":8.97,"wind_deg":36,"wind_gust":16.02,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":96,"pop":0,"uvi":4},{"dt":1637431200,"sunrise":1637413271,"sunset":1637451153,"moonrise":1637454660,"moonset":1637417280,"moon_phase":0.54,"temp":{"day":71.62,"min":59.58,"max":72.79,"night":69.94,"eve":70.5,"morn":59.58},"feels_like":{"day":71.58,"night":70.02,"eve":70.63,"morn":59.61},"pressure":1019,"humidity":66,"dew_point":59.23,"wind_speed":11.23,"wind_deg":159,"wind_gust":19.98,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":95,"pop":0,"uvi":4}]}'
-  recorded_at: Sat, 13 Nov 2021 21:28:08 GMT
+  recorded_at: Sat, 13 Nov 2021 21:28:10 GMT
 recorded_with: VCR 6.0.0
