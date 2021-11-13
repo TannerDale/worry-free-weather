@@ -19,7 +19,7 @@ describe MapQuestService do
             {
               latLng: {
                 lat: 30.264979,
-                lng: 97.746598
+                lng: -97.746598
               }
             }
           ]
@@ -36,7 +36,7 @@ describe MapQuestService do
     result = MapQuestService.location_lat_lng('Austin, Tx')
     expected = {
       lat: 30.264979,
-      lng: 97.746598
+      lng: -97.746598
     }
 
     expect(result).to eq(expected)
