@@ -1,24 +1,37 @@
-# README
+# Worry Free Weather
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A back-end SOA application providing up-to-date weather forcasts taken from Open Weather
+and providing travel time and weather on arrival for road trips.
 
-Things you may want to cover:
+# Technologies
 
-* Ruby version
+### Primary
 
-* System dependencies
+- Ruby 2.7.2
+- Rails 5.2.6
+- PostgreSQL
+- RSpec
 
-* Configuration
+### Secondary
 
-* Database creation
+- Bcrypt
+- Faraday
+- JSONAPI-serializers
+- SimpleCov
+- Webmock + VCR
 
-* Database initialization
+# Set Up
 
-* How to run the test suite
+1) `bundle install`
+2) `rails db:{create,migrate,seed}`
 
-* Services (job queues, cache servers, search engines, etc.)
+# Testing
 
-* Deployment instructions
+### Overview
 
-* ...
+- TDD process utilizing RSpec
+- Coverage monitored by SimpleCov
+
+### Execute Test Suite
+
+1) `bundle exec rspec`
