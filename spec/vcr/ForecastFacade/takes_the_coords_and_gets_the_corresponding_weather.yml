@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.openweathermap.org/data/2.5/onecall?appid=<OPENWEATHER_KEY>&exclude=minutely,alerts&lat=30.26497&lon=-97.746598&units=imperial
+    uri: https://api.openweathermap.org/data/2.5/onecall?appid=<OPENWEATHER_KEY>&exclude=minutely,alerts&lat=30.264979&lon=-97.746598&units=imperial
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 14 Nov 2021 23:02:00 GMT
+      - Sun, 14 Nov 2021 23:01:59 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -96,5 +96,5 @@ http_interactions:
         clouds","icon":"03d"}],"clouds":31,"pop":0,"uvi":4},{"dt":1637431200,"sunrise":1637413271,"sunset":1637451153,"moonrise":1637454660,"moonset":1637417280,"moon_phase":0.54,"temp":{"day":72.84,"min":53.89,"max":74.66,"night":66.52,"eve":70.7,"morn":53.89},"feels_like":{"day":72.55,"night":66.36,"eve":70.52,"morn":53.06},"pressure":1021,"humidity":58,"dew_point":57.02,"wind_speed":11.68,"wind_deg":194,"wind_gust":25.28,"weather":[{"id":801,"main":"Clouds","description":"few
         clouds","icon":"02d"}],"clouds":21,"pop":0,"uvi":4},{"dt":1637517600,"sunrise":1637499722,"sunset":1637537533,"moonrise":1637543760,"moonset":1637507040,"moon_phase":0.57,"temp":{"day":69.28,"min":60.26,"max":74.17,"night":68.13,"eve":68.94,"morn":60.26},"feels_like":{"day":69.24,"night":68.16,"eve":68.95,"morn":60.17},"pressure":1020,"humidity":71,"dew_point":58.93,"wind_speed":9.35,"wind_deg":162,"wind_gust":24.07,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":95,"pop":0,"uvi":4}]}'
-  recorded_at: Sun, 14 Nov 2021 23:02:00 GMT
+  recorded_at: Sun, 14 Nov 2021 23:01:59 GMT
 recorded_with: VCR 6.0.0
