@@ -8,14 +8,6 @@ class OpenWeatherService
 
     private
 
-    def formatted_response(response)
-      {
-        current_weather: filter_current(response[:current]),
-        hourly_weather: filter_hourly(response[:hourly]),
-        daily_weather: filter_daily(response[:daily])
-      }
-    end
-
     def url(coords)
       "/data/2.5/onecall?#{format_coords(coords)}"
     end
@@ -24,6 +16,14 @@ class OpenWeatherService
       coords.map do |key, value|
         "#{key}=#{value}"
       end.join('&')
+    end
+
+    def formatted_response(response)
+      {
+        current_weather: filter_current(response[:current]),
+        hourly_weather: filter_hourly(response[:hourly]),
+        daily_weather: filter_daily(response[:daily])
+      }
     end
 
     def filter_current(current)
