@@ -6,6 +6,8 @@ describe OpenWeatherService, :vcr do
   let(:current) { result[:current_weather] }
   let(:hourly) { result[:hourly_weather] }
   let(:daily) { result[:daily_weather] }
+  let(:datetime_regex) { /\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\s[+-]\d{4}/ }
+  let(:time_regex) { /\d{2}:\d{2}:\d{2}/ }
 
   describe 'filtering data' do
     it 'has the correct root keys' do
@@ -24,14 +26,14 @@ describe OpenWeatherService, :vcr do
 
     it 'filters the current weather' do
       expected_keys = %i[
-        dt sunrise sunset temp feels_like humidity uvi visibility description icon
+        datetime sunrise sunset temp feels_like humidity uvi visibility description icon
       ]
 
       expect(current.keys).to eq(expected_keys)
     end
 
     it 'filters hourly weather' do
-      expected_keys = %i[dt temp description icon]
+      expected_keys = %i[time temp description icon]
 
       hourly.each do |hour|
         expect(hour.keys).to eq(expected_keys)
@@ -40,12 +42,30 @@ describe OpenWeatherService, :vcr do
 
     it 'filters daily weather' do
       expected_keys = %i[
-        dt sunrise sunset min_temp max_temp description icon
+        datetime sunrise sunset min_temp max_temp description icon
       ]
 
       daily.each do |day|
         expect(day.keys).to eq(expected_keys)
       end
+    end
+  end
+
+  describe 'time formatting' do
+    it 'formats the times for current weather' do
+      expect(current[:datetime]).to match(datetime_regex)
+      expect(current[:sunrise]).to match(datetime_regex)
+      expect(current[:sunrise]).to match(datetime_regex)
+    end
+
+    it 'formats the times for hourly weather' do
+      expect(hourly.first[:time]).to match(time_regex)
+    end
+
+    it 'formats the times for daily weather' do
+      expect(daily.first[:datetime]).to match(datetime_regex)
+      expect(daily.first[:sunrise]).to match(datetime_regex)
+      expect(daily.first[:sunrise]).to match(datetime_regex)
     end
   end
 end

@@ -28,9 +28,9 @@ class OpenWeatherService
 
     def filter_current(current)
       {
-        dt: current[:dt],
-        sunrise: current[:sunrise],
-        sunset: current[:sunset],
+        datetime: format_datetime(current[:dt]),
+        sunrise: format_datetime(current[:sunrise]),
+        sunset: format_datetime(current[:sunset]),
         temp: current[:temp],
         feels_like: current[:feels_like],
         humidity: current[:humidity],
@@ -55,7 +55,7 @@ class OpenWeatherService
 
     def hour_data(hour)
       {
-        dt: hour[:dt],
+        time: format_time(hour[:dt]),
         temp: hour[:temp],
         description: hour[:weather].first[:description],
         icon: hour[:weather].first[:icon]
@@ -64,14 +64,22 @@ class OpenWeatherService
 
     def day_data(day)
       {
-        dt: day[:dt],
-        sunrise: day[:sunrise],
-        sunset: day[:sunset],
+        datetime: format_datetime(day[:dt]),
+        sunrise: format_datetime(day[:sunrise]),
+        sunset: format_datetime(day[:sunset]),
         min_temp: day[:temp][:min],
         max_temp: day[:temp][:max],
         description: day[:weather].first[:description],
         icon: day[:weather].first[:icon]
       }
+    end
+
+    def format_datetime(datetime)
+      Time.at(datetime).to_s
+    end
+
+    def format_time(time)
+      Time.at(time).strftime('%H:%M:%S')
     end
   end
 end
