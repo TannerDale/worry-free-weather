@@ -10,9 +10,9 @@ class OpenWeatherService
 
     def formatted_response(response)
       {
-        current: filter_current(response[:current]),
-        hourly: filter_hourly(response[:hourly]),
-        daily: filter_daily(response[:daily])
+        current_weather: filter_current(response[:current]),
+        hourly_weather: filter_hourly(response[:hourly]),
+        daily_weather: filter_daily(response[:daily])
       }
     end
 

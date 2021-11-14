@@ -3,23 +3,23 @@ require 'rails_helper'
 describe OpenWeatherService, :vcr do
   let(:coords) { { lat: 30.26497, lon: -97.746598 } }
   let!(:result) { OpenWeatherService.weather_data(coords) }
-  let(:current) { result[:current] }
-  let(:hourly) { result[:hourly] }
-  let(:daily) { result[:daily] }
+  let(:current) { result[:current_weather] }
+  let(:hourly) { result[:hourly_weather] }
+  let(:daily) { result[:daily_weather] }
 
   describe 'filtering data' do
     it 'has the correct root keys' do
-      expect(result).to have_key :current
-      expect(result).to have_key :hourly
-      expect(result).to have_key :daily
+      expect(result).to have_key :current_weather
+      expect(result).to have_key :hourly_weather
+      expect(result).to have_key :daily_weather
 
       expect(result).to_not have_key :minutely
       expect(result).to_not have_key :alerts
     end
 
     it 'has the correct hourly, daily sizes' do
-      expect(result[:hourly].size).to eq 8
-      expect(result[:daily].size).to eq 5
+      expect(result[:hourly_weather].size).to eq 8
+      expect(result[:daily_weather].size).to eq 5
     end
 
     it 'filters the current weather' do
