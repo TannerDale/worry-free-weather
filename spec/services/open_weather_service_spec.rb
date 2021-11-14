@@ -6,8 +6,8 @@ describe OpenWeatherService, :vcr do
   let(:current) { result[:current_weather] }
   let(:hourly) { result[:hourly_weather] }
   let(:daily) { result[:daily_weather] }
-  let(:datetime_regex) { /\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\s[+-]\d{4}/ }
-  let(:time_regex) { /\d{2}:\d{2}:\d{2}/ }
+  let!(:datetime_regex) { /\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\s[+-]\d{4}/ }
+  let!(:time_regex) { /\d{2}:\d{2}:\d{2}/ }
 
   describe 'filtering data' do
     it 'has the correct root keys' do
