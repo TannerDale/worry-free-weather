@@ -13,9 +13,7 @@ class OpenWeatherService
     end
 
     def format_coords(coords)
-      coords.map do |key, value|
-        "#{key}=#{value}"
-      end.join('&')
+      "lat=#{coords[:lat]}&lon=#{coords[:lon]}"
     end
 
     def formatted_response(response)
