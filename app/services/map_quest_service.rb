@@ -1,6 +1,6 @@
 class MapQuestService
   class << self
-    def location_lat_lng(location)
+    def location_lat_lon(location)
       filter_data(MapQuestClient.fetch(location))
     end
 
