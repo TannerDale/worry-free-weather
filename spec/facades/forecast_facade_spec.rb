@@ -10,11 +10,13 @@ describe ForecastFacade, :vcr do
   end
 
   before :each do
-    allow(MapQuestService).to receive(:location_lat_lng).and_return(coords)
+    allow(MapQuestService).to receive(:location_lat_lon).and_return(coords)
   end
 
   it 'takes the coords and gets the corresponding weather' do
-    result = ForecastFacade.weather_data('Austin, TX')
+    serialized = ForecastFacade.weather_data('Austin, TX')
+    parsed = JSON.parse(serialized, symbolize_names: true)
+    result = parsed[:data][:attributes]
 
     expect(result).to be_a Hash
     expect(result).to_not be_empty

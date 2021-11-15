@@ -33,7 +33,7 @@ describe MapQuestService do
   end
 
   it 'can filter the data down to just the location info' do
-    result = MapQuestService.location_lat_lng('Austin, Tx')
+    result = MapQuestService.location_lat_lon('Austin, Tx')
     expected = {
       lat: 30.264979,
       lng: -97.746598
