@@ -13,7 +13,7 @@ class OpenWeatherService
     end
 
     def format_coords(coords)
-      "lat=#{coords[:lat]}&lon=#{coords[:lon]}"
+      "lat=#{coords[:lat]}&lon=#{coords[:lng]}"
     end
 
     def formatted_response(response)
