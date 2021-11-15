@@ -97,4 +97,45 @@ http_interactions:
         rain","icon":"10d"}],"clouds":98,"pop":0.88,"rain":3.28,"uvi":4},{"dt":1637604000,"sunrise":1637586173,"sunset":1637623915,"moonrise":1637633100,"moonset":1637596620,"moon_phase":0.6,"temp":{"day":67.82,"min":53.65,"max":71.64,"night":62.38,"eve":65.52,"morn":53.65},"feels_like":{"day":65.89,"night":60.35,"eve":63.61,"morn":52.02},"pressure":1022,"humidity":34,"dew_point":38.46,"wind_speed":8.75,"wind_deg":6,"wind_gust":19.77,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0.08,"uvi":4}]}'
   recorded_at: Mon, 15 Nov 2021 17:28:02 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=<OPENWEATHER_KEY>&exclude=minutely,alerts&lat=30.26497&lon=-97.746598&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 15 Nov 2021 17:28:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '482'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?exclude=minutely%2Calerts&lat=30.26&lon=-97.75&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-97.7466,"lat":30.265},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"base":"stations","main":{"temp":72.09,"feels_like":72.9,"temp_min":68.81,"temp_max":75.96,"pressure":1021,"humidity":83},"visibility":10000,"wind":{"speed":4,"deg":180,"gust":8.01},"clouds":{"all":75},"dt":1636997062,"sys":{"type":2,"id":2003218,"country":"US","sunrise":1636981016,"sunset":1637019275},"timezone":-21600,"id":4671654,"name":"Austin","cod":200}'
+  recorded_at: Mon, 15 Nov 2021 17:28:03 GMT
 recorded_with: VCR 6.0.0

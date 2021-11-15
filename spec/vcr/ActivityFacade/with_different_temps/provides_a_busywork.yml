@@ -1,0 +1,321 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<MAPQUEST_KEY>&location=Austin,%20TX
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 15 Nov 2021 17:27:33 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 15 Nov 2021 17:27:33 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=819D46A6FC7E238060B11BFEC8AD0181; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Austin,
+        TX"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Austin","adminArea5Type":"City","adminArea4":"Travis
+        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-401047661"}]}]}'
+  recorded_at: Mon, 15 Nov 2021 17:27:33 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=<OPENWEATHER_KEY>&exclude=minutely,alerts&lat=30.264979&lon=-97.746598&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 15 Nov 2021 17:27:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '482'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?exclude=minutely%2Calerts&lat=30.26&lon=-97.75&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-97.7466,"lat":30.265},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"base":"stations","main":{"temp":72.09,"feels_like":72.9,"temp_min":68.81,"temp_max":75.96,"pressure":1021,"humidity":83},"visibility":10000,"wind":{"speed":4,"deg":180,"gust":8.01},"clouds":{"all":75},"dt":1636997062,"sys":{"type":2,"id":2003218,"country":"US","sunrise":1636981016,"sunset":1637019275},"timezone":-21600,"id":4671654,"name":"Austin","cod":200}'
+  recorded_at: Mon, 15 Nov 2021 17:27:33 GMT
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=relaxation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '156'
+      Etag:
+      - W/"9c-UQ9nVrtdu2T/U9cvg8p6Kn0JeI8"
+      Date:
+      - Mon, 15 Nov 2021 17:27:36 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Pot some plants and put them around your house","type":"relaxation","participants":1,"price":0.4,"link":"","key":"6613330","accessibility":0.3}'
+  recorded_at: Mon, 15 Nov 2021 17:27:36 GMT
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=recreational
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '133'
+      Etag:
+      - W/"85-fU2M/BtN0iznyUB2Kq6Y9WMCCT8"
+      Date:
+      - Mon, 15 Nov 2021 17:27:39 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Watch a classic movie","type":"recreational","participants":1,"price":0.1,"link":"","key":"8081693","accessibility":0.1}'
+  recorded_at: Mon, 15 Nov 2021 17:27:39 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<MAPQUEST_KEY>&location=Austin,%20TX
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 15 Nov 2021 17:27:39 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1028'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 15 Nov 2021 17:27:39 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=10213BDAD6B0AAAF5041CDA002264318; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Austin,
+        TX"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Austin","adminArea5Type":"City","adminArea4":"Travis
+        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=17990263"}]}]}'
+  recorded_at: Mon, 15 Nov 2021 17:27:39 GMT
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=relaxation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '176'
+      Etag:
+      - W/"b0-C8DYF7+R5fyRxja8MMZJ+ho+xyA"
+      Date:
+      - Mon, 15 Nov 2021 17:27:41 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Sit in the dark and listen to your favorite music with
+        no distractions","type":"relaxation","participants":1,"price":0,"link":"","key":"9908721","accessibility":1}'
+  recorded_at: Mon, 15 Nov 2021 17:27:41 GMT
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=busywork
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '145'
+      Etag:
+      - W/"91-Xwiuy/oP9LlS8OFJCztMjZ3LW/s"
+      Date:
+      - Mon, 15 Nov 2021 17:27:44 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Resolve a problem you''ve been putting off","type":"busywork","participants":1,"price":0,"link":"","key":"9999999","accessibility":0}'
+  recorded_at: Mon, 15 Nov 2021 17:27:44 GMT
+recorded_with: VCR 6.0.0

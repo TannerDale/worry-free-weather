@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       resource :forecast, only: :show
 
       resource :backgrounds, only: :show
+
+      resource :activities, only: :show
     end
   end
 end

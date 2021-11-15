@@ -1,15 +1,28 @@
 class OpenWeatherService
   class << self
     def weather_data(coords)
-      response = OpenWeatherClient.fetch(url(coords))
+      response = OpenWeatherClient.fetch(onecall_url(coords))
 
       formatted_response(response)
     end
 
+    def current_weather_data(coords)
+      response = OpenWeatherClient.fetch(current_url(coords))
+
+      {
+        summary: response[:weather].first[:description],
+        temp: response[:main][:temp]
+      }
+    end
+
     private
 
-    def url(coords)
+    def onecall_url(coords)
       "/data/2.5/onecall?#{format_coords(coords)}"
+    end
+
+    def current_url(coords)
+      "/data/2.5/weather?#{format_coords(coords)}"
     end
 
     def format_coords(coords)
