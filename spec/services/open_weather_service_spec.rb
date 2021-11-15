@@ -69,4 +69,13 @@ describe OpenWeatherService, :vcr do
       expect(daily.first[:sunrise]).to match(datetime_regex)
     end
   end
+
+  describe 'location current weather' do
+    it 'returns weather current weather for the city' do
+      result = OpenWeatherService.current_weather_data(coords)
+
+      expect(result.keys).to eq([:temp])
+      expect(result[:temp]).to be_a Float
+    end
+  end
 end
