@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe OpenWeatherService, :vcr do
-  let(:coords) { { lat: 30.26497, lon: -97.746598 } }
+  let(:coords) { { lat: 30.26497, lng: -97.746598 } }
   let!(:result) { OpenWeatherService.weather_data(coords) }
   let(:current) { result[:current_weather] }
   let(:hourly) { result[:hourly_weather] }

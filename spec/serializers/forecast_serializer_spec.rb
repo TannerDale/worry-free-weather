@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe ForecastSerializer, :vcr do
-  let(:coords) { { lat: 30.26497, lon: -97.746598 } }
+  let(:coords) { { lat: 30.26497, lng: -97.746598 } }
   let!(:response) { OpenWeatherService.weather_data(coords) }
   let(:serialized) { ForecastSerializer.serialize(response) }
   let(:result) { JSON.parse(serialized, symbolize_names: true) }

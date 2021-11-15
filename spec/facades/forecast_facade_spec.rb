@@ -5,7 +5,7 @@ describe ForecastFacade, :vcr do
   let(:coords) do
     {
       lat: 30.264979,
-      lon: -97.746598
+      lng: -97.746598
     }
   end
 
