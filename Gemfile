@@ -13,7 +13,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'figaro'
-gem 'jsonapi-serializers'
+gem 'jsonapi-serializer'
 
 group :development, :test do
   gem 'pry'
