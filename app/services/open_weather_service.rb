@@ -34,7 +34,7 @@ class OpenWeatherService
         humidity: current[:humidity],
         uvi: current[:uvi],
         visibility: current[:visibility],
-        description: current[:weather].first[:description],
+        conditions: current[:weather].first[:description],
         icon: current[:weather].first[:icon]
       }
     end
@@ -55,19 +55,19 @@ class OpenWeatherService
       {
         time: format_time(hour[:dt]),
         temp: hour[:temp],
-        description: hour[:weather].first[:description],
+        conditions: hour[:weather].first[:description],
         icon: hour[:weather].first[:icon]
       }
     end
 
     def day_data(day)
       {
-        datetime: format_datetime(day[:dt]),
+        date: format_date(day[:dt]),
         sunrise: format_datetime(day[:sunrise]),
         sunset: format_datetime(day[:sunset]),
         min_temp: day[:temp][:min],
         max_temp: day[:temp][:max],
-        description: day[:weather].first[:description],
+        conditions: day[:weather].first[:description],
         icon: day[:weather].first[:icon]
       }
     end
@@ -78,6 +78,10 @@ class OpenWeatherService
 
     def format_time(time)
       Time.at(time).strftime('%H:%M:%S')
+    end
+
+    def format_date(date)
+      Time.at(date).strftime('%Y-%m-%d')
     end
   end
 end
