@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '141'
+      - '133'
       Etag:
-      - W/"8d-RrOTzUYMfpMhpfyysETu4v2pJvc"
+      - W/"85-fU2M/BtN0iznyUB2Kq6Y9WMCCT8"
       Date:
-      - Mon, 15 Nov 2021 16:31:17 GMT
+      - Mon, 15 Nov 2021 17:27:59 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Learn how to play a new sport","type":"recreational","participants":1,"price":0.1,"link":"","key":"5808228","accessibility":0.2}'
-  recorded_at: Mon, 15 Nov 2021 16:31:18 GMT
+      string: '{"activity":"Watch a classic movie","type":"recreational","participants":1,"price":0.1,"link":"","key":"8081693","accessibility":0.1}'
+  recorded_at: Mon, 15 Nov 2021 17:27:59 GMT
 recorded_with: VCR 6.0.0

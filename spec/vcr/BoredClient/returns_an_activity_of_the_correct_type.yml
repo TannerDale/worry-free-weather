@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '137'
+      - '120'
       Etag:
-      - W/"89-q3mDLnm/woJGRdOtqBBQJs2FGGE"
+      - W/"78-tZHpEjYTiXlvBBUX8OzulbytI3Q"
       Date:
-      - Mon, 15 Nov 2021 16:21:59 GMT
+      - Mon, 15 Nov 2021 17:26:57 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Make your own LEGO creation","type":"recreational","participants":1,"price":0,"link":"","key":"1129748","accessibility":0.1}'
-  recorded_at: Mon, 15 Nov 2021 16:21:59 GMT
+      string: '{"activity":"Write a poem","type":"recreational","participants":1,"price":0,"link":"","key":"8688620","accessibility":0}'
+  recorded_at: Mon, 15 Nov 2021 17:26:57 GMT
 recorded_with: VCR 6.0.0
