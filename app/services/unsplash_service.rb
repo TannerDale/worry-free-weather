@@ -1,7 +1,13 @@
 class UnsplashService
+  class ImageNotFound < StandardError; end
+
   class << self
     def location_image(city)
-      format_data(UnsplashClient.fetch(url(city)))
+      result = UnsplashClient.fetch(url(city))
+
+      raise ImageNotFound if result[:results].empty?
+
+      format_data(result)
     end
 
     private
@@ -13,7 +19,7 @@ class UnsplashService
     def format_data(data)
       {
         url: data[:results].first[:urls][:regular],
-        author: data[:results].first[:user][:name],
+        author: data[:results].first[:user][:name]
       }
     end
   end

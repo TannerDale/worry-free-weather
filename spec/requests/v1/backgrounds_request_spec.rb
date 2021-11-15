@@ -42,4 +42,12 @@ describe 'Backgrounds Requests', :vcr do
       expect(parsed[:error][:details]).to eq('No location provided')
     end
   end
+
+  context 'with no image found' do
+    before { get api_v1_backgrounds_path, params: { location: 'asdfasdfaf' } }
+
+    it 'returns a no image found message' do
+      expect(parsed).to eq({ data: { message: 'No Image Found' } })
+    end
+  end
 end
