@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Sun, 14 Nov 2021 23:01:58 GMT
+      - Mon, 15 Nov 2021 00:05:48 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Content-Length:
-      - '1029'
+      Transfer-Encoding:
+      - chunked
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Sun, 14 Nov 2021 23:01:58 GMT
+      - Mon, 15 Nov 2021 00:05:48 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=8E9EB9B162044DA06573F58319D56599; Path=/; HttpOnly
+      - JSESSIONID=7D4EDD398D7A8A4022565479E1E2FBF4; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -52,6 +52,6 @@ http_interactions:
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Austin,
         tx"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Austin","adminArea5Type":"City","adminArea4":"Travis
-        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=932610658"}]}]}'
-  recorded_at: Sun, 14 Nov 2021 23:01:58 GMT
+        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1838881037"}]}]}'
+  recorded_at: Mon, 15 Nov 2021 00:05:48 GMT
 recorded_with: VCR 6.0.0
