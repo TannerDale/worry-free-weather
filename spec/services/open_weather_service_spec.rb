@@ -74,7 +74,9 @@ describe OpenWeatherService, :vcr do
     it 'returns weather current weather for the city' do
       result = OpenWeatherService.current_weather_data(coords)
 
-      expect(result.keys).to eq([:temp])
+      expect(result.keys).to eq(%i[summary temp])
+
+      expect(result[:summary]).to be_a String
       expect(result[:temp]).to be_a Float
     end
   end

@@ -9,7 +9,10 @@ class OpenWeatherService
     def current_weather_data(coords)
       response = OpenWeatherClient.fetch(current_url(coords))
 
-      { temp: response[:main][:temp] }
+      {
+        summary: response[:weather].first[:description],
+        temp: response[:main][:temp]
+      }
     end
 
     private
