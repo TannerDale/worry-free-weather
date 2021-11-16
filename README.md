@@ -24,6 +24,7 @@ and providing travel time and weather on arrival information for road trips.
 
 1) `bundle install`
 2) `rails db:{create,migrate,seed}`
+3) `rails dev:cache`
 
 # Testing
 
