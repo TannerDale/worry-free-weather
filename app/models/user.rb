@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
   after_validation :assign_api_key
 
-  validates :email, presence: true
+  validates :email, presence: true, uniqueness: true
   validates :password, presence: true
   validates :password_confirmation, presence: true
 
