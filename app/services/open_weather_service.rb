@@ -5,7 +5,7 @@ class OpenWeatherService
     end
 
     def one_call_response(coords)
-      Rails.cache.fetch coords.keys.join(',') do
+      Rails.cache.fetch coords.values.join(','), expires_in: 30.minutes do
         OpenWeatherClient.fetch(onecall_url(coords))
       end
     end

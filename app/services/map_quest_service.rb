@@ -7,7 +7,7 @@ class MapQuestService
     end
 
     def road_trip(to, from)
-      route = Rails.cache.fetch "#{to}, #{from}" do
+      route = Rails.cache.fetch "#{to}, #{from}", expires_in: 30.minutes do
         MapQuestClient.fetch(road_trip_url(to, from))
       end
 
