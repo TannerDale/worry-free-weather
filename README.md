@@ -44,7 +44,7 @@ and providing travel time and weather on arrival information for road trips.
 - `GET /api/v1/forecast?location={city,state}`
 
 - Response:
-`status: 200`
+- `status: 200`
 ```json
 {
   "data": {
@@ -83,7 +83,7 @@ and providing travel time and weather on arrival information for road trips.
 - `GET /api/v1/backgrounds?location={city,state}`
 
 - Response:
-`status: 200`
+- `status: 200`
 ```json
 {
   "data": {
@@ -110,7 +110,7 @@ and providing travel time and weather on arrival information for road trips.
 }
 ```
 - Response:
-`status: 201`
+- `status: 201`
 ```json
 {
   "data": {
@@ -136,7 +136,7 @@ and providing travel time and weather on arrival information for road trips.
 }
 ```
 - Response:
-`status: 200`
+- `status: 200`
 ```json
 {
   "data": {
@@ -163,7 +163,7 @@ and providing travel time and weather on arrival information for road trips.
 }
 ```
 - Response:
-`status: 200`
+- `status: 200`
 ```json
 {
   "data": {
