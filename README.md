@@ -144,7 +144,7 @@ and providing travel time and weather on arrival information for road trips.
     "type": "users",
     "attributes": {
       "email": "email@provider.com",
-      "api_key": "SomeRandomKey"
+      "api_key": "{your api key}"
     }
   }
 }
