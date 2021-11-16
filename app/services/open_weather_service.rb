@@ -1,9 +1,11 @@
 class OpenWeatherService
   class << self
     def weather_data(coords)
-      response = OpenWeatherClient.fetch(onecall_url(coords))
+      formatted_response(one_call_response(coords))
+    end
 
-      formatted_response(response)
+    def one_call_response(coords)
+      OpenWeatherClient.fetch(onecall_url(coords))
     end
 
     def current_weather_data(coords)
