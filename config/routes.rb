@@ -6,6 +6,8 @@ Rails.application.routes.draw do
       resource :backgrounds, only: :show
 
       resource :activities, only: :show
+
+      resources :users, only: :create
     end
   end
 end
