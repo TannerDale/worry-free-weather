@@ -43,7 +43,7 @@ and providing travel time and weather on arrival information for road trips.
 #### Endpoint
 - `GET /api/v1/forecast?location={city,state}`
 
-- Response:
+#### Response:
 - `status: 200`
 ```json
 {
@@ -82,7 +82,7 @@ and providing travel time and weather on arrival information for road trips.
 #### Endpoint
 - `GET /api/v1/backgrounds?location={city,state}`
 
-- Response:
+#### Response:
 - `status: 200`
 ```json
 {
@@ -109,7 +109,7 @@ and providing travel time and weather on arrival information for road trips.
   "password_confirmation": "supersecretpassword"
 }
 ```
-- Response:
+#### Response:
 - `status: 201`
 ```json
 {
@@ -162,7 +162,7 @@ and providing travel time and weather on arrival information for road trips.
   "api_key": "{your api key}"
 }
 ```
-- Response:
+#### Response:
 - `status: 200`
 ```json
 {
@@ -191,4 +191,3 @@ and providing travel time and weather on arrival information for road trips.
 - [Open Weather](https://openweathermap.org/api/one-call-api) for weather data
 - [MapQuest](https://developer.mapquest.com/) for coordinate and route data
 - [Unsplash](https://unsplash.com/developers) for city background images
-gs
