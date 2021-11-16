@@ -7,7 +7,9 @@ class MapQuestService
     end
 
     def road_trip(to, from)
-      route = MapQuestClient.fetch(road_trip_url(to, from))
+      route = Rails.cache.fetch "#{to}, #{from}" do
+        MapQuestClient.fetch(road_trip_url(to, from))
+      end
 
       raise ImpossibleRoute if route[:info][:statuscode] == 402
 
