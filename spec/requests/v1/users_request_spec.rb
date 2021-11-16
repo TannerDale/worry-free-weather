@@ -3,12 +3,11 @@ require 'rails_helper'
 describe 'Users Requests' do
   let(:headers) { { 'CONTENT_TYPE' => 'application/json' } }
   let(:parsed) { JSON.parse(response.body, symbolize_names: true) }
+  let(:params) { { email: 'hello', password: 'world', password_confirmation: 'world' } }
 
   describe 'POST /v1/users' do
     context 'with valid params' do
-      let(:valid_params) { { email: 'hello', password: 'world', password_confirmation: 'world' }.to_json }
-
-      before { post api_v1_users_path, headers: headers, params: valid_params }
+      before { post api_v1_users_path, headers: headers, params: params.to_json }
 
       it 'returns status code 201' do
         expect(response).to have_http_status 201
@@ -27,7 +26,6 @@ describe 'Users Requests' do
 
     context 'with invalid params' do
       let!(:existing_user) { create :user, email: 'tree' }
-      let(:params) { { email: 'hello', password: 'world', password_confirmation: 'world' } }
 
       it 'rejects no email' do
         post api_v1_users_path, headers: headers, params: params.merge({ email: '' }).to_json
