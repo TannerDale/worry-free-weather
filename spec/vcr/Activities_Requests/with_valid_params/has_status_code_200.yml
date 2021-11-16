@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 15 Nov 2021 18:51:12 GMT
+      - Tue, 16 Nov 2021 03:36:55 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1029'
+      - '1030'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 15 Nov 2021 18:51:12 GMT
+      - Tue, 16 Nov 2021 03:36:55 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=421CDA5E85A9C98FC4067DE19A794D7C; Path=/; HttpOnly
+      - JSESSIONID=B3B8802966626E52EABB7A0EA24218C0; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"austin,tx"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Austin","adminArea5Type":"City","adminArea4":"Travis
-        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-597527428"}]}]}'
-  recorded_at: Mon, 15 Nov 2021 18:51:12 GMT
+        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-2069338304"}]}]}'
+  recorded_at: Tue, 16 Nov 2021 03:36:55 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/weather?appid=<OPENWEATHER_KEY>&exclude=minutely,alerts&lat=30.264979&lon=-97.746598&units=imperial
@@ -74,11 +74,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 15 Nov 2021 18:51:12 GMT
+      - Tue, 16 Nov 2021 03:36:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '486'
+      - '479'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -91,9 +91,9 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"coord":{"lon":-97.7466,"lat":30.265},"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03d"}],"base":"stations","main":{"temp":77.81,"feels_like":78.44,"temp_min":74.55,"temp_max":80.96,"pressure":1018,"humidity":67},"visibility":10000,"wind":{"speed":3,"deg":113,"gust":8.99},"clouds":{"all":40},"dt":1637002272,"sys":{"type":2,"id":2003218,"country":"US","sunrise":1636981016,"sunset":1637019275},"timezone":-21600,"id":4671654,"name":"Austin","cod":200}'
-  recorded_at: Mon, 15 Nov 2021 18:51:12 GMT
+      string: '{"coord":{"lon":-97.7466,"lat":30.265},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"base":"stations","main":{"temp":67.84,"feels_like":68.13,"temp_min":64.2,"temp_max":70.86,"pressure":1017,"humidity":81},"visibility":10000,"wind":{"speed":1.99,"deg":158,"gust":5.99},"clouds":{"all":0},"dt":1637033753,"sys":{"type":2,"id":2003218,"country":"US","sunrise":1636981016,"sunset":1637019275},"timezone":-21600,"id":4671654,"name":"Austin","cod":200}'
+  recorded_at: Tue, 16 Nov 2021 03:36:55 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=relaxation
@@ -125,17 +125,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '128'
+      - '134'
       Etag:
-      - W/"80-1fmB+ULWB/HhPc7HFw1K2brndQ0"
+      - W/"86-8I2tyGWT2BRwZpNrEw3+VvbvKzE"
       Date:
-      - Mon, 15 Nov 2021 18:51:16 GMT
+      - Tue, 16 Nov 2021 03:36:58 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Go to a nail salon","type":"relaxation","participants":1,"price":0.4,"link":"","key":"7526324","accessibility":0.5}'
-  recorded_at: Mon, 15 Nov 2021 18:51:16 GMT
+      string: '{"activity":"Take your cat on a walk","type":"relaxation","participants":1,"price":0.02,"link":"","key":"5940465","accessibility":0.1}'
+  recorded_at: Tue, 16 Nov 2021 03:36:58 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=recreational
@@ -171,11 +171,11 @@ http_interactions:
       Etag:
       - W/"8a-XbUbfyWwGjKexESyMwZI8Ymj2us"
       Date:
-      - Mon, 15 Nov 2021 18:51:19 GMT
+      - Tue, 16 Nov 2021 03:37:01 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"activity":"Create a personal website","type":"recreational","participants":1,"price":0.1,"link":"","key":"3141417","accessibility":0.12}'
-  recorded_at: Mon, 15 Nov 2021 18:51:19 GMT
+  recorded_at: Tue, 16 Nov 2021 03:37:01 GMT
 recorded_with: VCR 6.0.0

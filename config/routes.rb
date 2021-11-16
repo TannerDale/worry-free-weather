@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       resources :users, only: :create
 
       resources :sessions, only: :create
+
+      resource :road_trip, only: :create
     end
   end
 end

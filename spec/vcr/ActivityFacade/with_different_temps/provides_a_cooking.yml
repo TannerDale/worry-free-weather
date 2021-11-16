@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 15 Nov 2021 17:27:44 GMT
+      - Tue, 16 Nov 2021 03:36:39 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 15 Nov 2021 17:27:44 GMT
+      - Tue, 16 Nov 2021 03:36:39 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=F71D69D46C993E033BE6109CAA7F2B30; Path=/; HttpOnly
+      - JSESSIONID=C06EB4922FD2563DCB435B2449B66352; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -52,8 +52,8 @@ http_interactions:
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Austin,
         TX"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Austin","adminArea5Type":"City","adminArea4":"Travis
-        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=2106754098"}]}]}'
-  recorded_at: Mon, 15 Nov 2021 17:27:44 GMT
+        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1110593380"}]}]}'
+  recorded_at: Tue, 16 Nov 2021 03:36:39 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/weather?appid=<OPENWEATHER_KEY>&exclude=minutely,alerts&lat=30.264979&lon=-97.746598&units=imperial
@@ -75,11 +75,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 15 Nov 2021 17:27:44 GMT
+      - Tue, 16 Nov 2021 03:36:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '482'
+      - '479'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -92,9 +92,9 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"coord":{"lon":-97.7466,"lat":30.265},"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"base":"stations","main":{"temp":72.09,"feels_like":72.9,"temp_min":68.81,"temp_max":75.96,"pressure":1021,"humidity":83},"visibility":10000,"wind":{"speed":4,"deg":180,"gust":8.01},"clouds":{"all":75},"dt":1636997062,"sys":{"type":2,"id":2003218,"country":"US","sunrise":1636981016,"sunset":1637019275},"timezone":-21600,"id":4671654,"name":"Austin","cod":200}'
-  recorded_at: Mon, 15 Nov 2021 17:27:44 GMT
+      string: '{"coord":{"lon":-97.7466,"lat":30.265},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"base":"stations","main":{"temp":67.84,"feels_like":68.13,"temp_min":64.2,"temp_max":70.86,"pressure":1017,"humidity":81},"visibility":10000,"wind":{"speed":1.99,"deg":158,"gust":5.99},"clouds":{"all":0},"dt":1637033753,"sys":{"type":2,"id":2003218,"country":"US","sunrise":1636981016,"sunset":1637019275},"timezone":-21600,"id":4671654,"name":"Austin","cod":200}'
+  recorded_at: Tue, 16 Nov 2021 03:36:39 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=relaxation
@@ -126,17 +126,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '156'
+      - '151'
       Etag:
-      - W/"9c-UQ9nVrtdu2T/U9cvg8p6Kn0JeI8"
+      - W/"97-CsGa20MxrZT4byYDsl3YkQoOfcQ"
       Date:
-      - Mon, 15 Nov 2021 17:27:47 GMT
+      - Tue, 16 Nov 2021 03:36:42 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Pot some plants and put them around your house","type":"relaxation","participants":1,"price":0.4,"link":"","key":"6613330","accessibility":0.3}'
-  recorded_at: Mon, 15 Nov 2021 17:27:47 GMT
+      string: '{"activity":"Shop at support your local farmers market","type":"relaxation","participants":1,"price":0.2,"link":"","key":"8979931","accessibility":0.1}'
+  recorded_at: Tue, 16 Nov 2021 03:36:42 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=recreational
@@ -168,17 +168,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '137'
+      - '139'
       Etag:
-      - W/"89-H+1151BmYv5EGVABCa1p9iBahQA"
+      - W/"8b-SUXeae+oRy2gJFTSbAimaNeeTwE"
       Date:
-      - Mon, 15 Nov 2021 17:27:49 GMT
+      - Tue, 16 Nov 2021 03:36:45 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Go to a local thrift shop","type":"recreational","participants":1,"price":0.1,"link":"","key":"8503795","accessibility":0.2}'
-  recorded_at: Mon, 15 Nov 2021 17:27:49 GMT
+      string: '{"activity":"Think of a new business idea","type":"recreational","participants":1,"price":0,"link":"","key":"6808057","accessibility":0.05}'
+  recorded_at: Tue, 16 Nov 2021 03:36:45 GMT
 - request:
     method: get
     uri: http://www.mapquestapi.com/geocoding/v1/address?key=<MAPQUEST_KEY>&location=Austin,%20TX
@@ -198,11 +198,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 15 Nov 2021 17:27:49 GMT
+      - Tue, 16 Nov 2021 03:36:45 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '1030'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -214,13 +214,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 15 Nov 2021 17:27:49 GMT
+      - Tue, 16 Nov 2021 03:36:45 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=0D6919E8E0A9F2059F8CB63EC38BD757; Path=/; HttpOnly
+      - JSESSIONID=7824E75CA42B4AD821E205FCD20C42BD; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -231,8 +231,8 @@ http_interactions:
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Austin,
         TX"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Austin","adminArea5Type":"City","adminArea4":"Travis
-        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1508698173"}]}]}'
-  recorded_at: Mon, 15 Nov 2021 17:27:49 GMT
+        County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282038951","unknownInput":"","type":"s","latLng":{"lat":30.264979,"lng":-97.746598},"displayLatLng":{"lat":30.264979,"lng":-97.746598},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_KEY>&type=map&size=225,160&locations=30.264979,-97.746598|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-603815998"}]}]}'
+  recorded_at: Tue, 16 Nov 2021 03:36:45 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=relaxation
@@ -264,17 +264,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '116'
+      - '138'
       Etag:
-      - W/"74-uQqm6fN+IBjOgMC7RKyhjP+Q+fo"
+      - W/"8a-03hWHhY1Zv1NfbAfrA6bvvQ9BJM"
       Date:
-      - Mon, 15 Nov 2021 17:27:52 GMT
+      - Tue, 16 Nov 2021 03:36:48 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Take a nap","type":"relaxation","participants":1,"price":0,"link":"","key":"6184514","accessibility":0}'
-  recorded_at: Mon, 15 Nov 2021 17:27:52 GMT
+      string: '{"activity":"Teach your dog a new trick","type":"relaxation","participants":1,"price":0.05,"link":"","key":"1668223","accessibility":0.15}'
+  recorded_at: Tue, 16 Nov 2021 03:36:48 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=cooking
@@ -306,15 +306,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '146'
+      - '143'
       Etag:
-      - W/"92-1vHPnOO7DF2c3UjFKHcOEb2h2ns"
+      - W/"8f-ysXG7C2bo6/kjrkRnocrmhVtFeo"
       Date:
-      - Mon, 15 Nov 2021 17:27:54 GMT
+      - Tue, 16 Nov 2021 03:36:51 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Bake pastries for you and your neighbor","type":"cooking","participants":1,"price":0.4,"link":"","key":"8125168","accessibility":0.3}'
-  recorded_at: Mon, 15 Nov 2021 17:27:54 GMT
+      string: '{"activity":"Cook something together with someone","type":"cooking","participants":2,"price":0.3,"link":"","key":"1799120","accessibility":0.8}'
+  recorded_at: Tue, 16 Nov 2021 03:36:51 GMT
 recorded_with: VCR 6.0.0

@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '120'
+      - '140'
       Etag:
-      - W/"78-tZHpEjYTiXlvBBUX8OzulbytI3Q"
+      - W/"8c-arcXhp2vdUaiMN2W385cwGUmge4"
       Date:
-      - Mon, 15 Nov 2021 17:26:57 GMT
+      - Tue, 16 Nov 2021 03:35:51 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Write a poem","type":"recreational","participants":1,"price":0,"link":"","key":"8688620","accessibility":0}'
-  recorded_at: Mon, 15 Nov 2021 17:26:57 GMT
+      string: '{"activity":"Go see a Broadway production","type":"recreational","participants":4,"price":0.8,"link":"","key":"4448913","accessibility":0.3}'
+  recorded_at: Tue, 16 Nov 2021 03:35:51 GMT
 recorded_with: VCR 6.0.0

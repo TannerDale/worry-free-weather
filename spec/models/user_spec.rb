@@ -13,4 +13,14 @@ describe User do
 
     expect(user.api_key).to be_a String
   end
+
+  it 'can validate and api key' do
+    users = create_list :user, 2
+
+    result1 = User.valid_api_key?(users.first.api_key)
+    result2 = User.valid_api_key?('asdfasdfasdf')
+
+    expect(result1).to be true
+    expect(result2).to be false
+  end
 end
