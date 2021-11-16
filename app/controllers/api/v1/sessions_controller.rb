@@ -1,11 +1,17 @@
 class Api::V1::SessionsController < ApplicationController
-  def create
-    user = User.find_by(email: params[:email])
+  before_action :validate_user
 
-    if user&.authenticate(params[:password])
-      render json: UserSerializer.new(user), status: 200
-    else
-      render json: { error: { details: 'Invalid email or password' } }, status: 400
-    end
+  def create
+    render json: UserSerializer.new(@user), status: 200
+  end
+
+  private
+
+  def validate_user
+    @user = User.find_by(email: params[:email])
+
+    return if @user&.authenticate(params[:password])
+
+    render json: { error: { details: 'Invalid email or password' } }, status: 400
   end
 end
