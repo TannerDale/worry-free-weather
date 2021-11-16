@@ -184,7 +184,7 @@ and providing travel time and weather on arrival information for road trips.
 
 # Contributors
 
-- Tanner Dale [GitHub](https://github.com/TannerDale), [LinkedIn](https://www.linkedin.com/in/tannerdale/)
+Tanner Dale - [GitHub](https://github.com/TannerDale) : [LinkedIn](https://www.linkedin.com/in/tannerdale/)
 
 # Acknowledgments
 
