@@ -10,4 +10,8 @@ class User < ApplicationRecord
   def assign_api_key
     self.api_key = ApiKey.generate
   end
+
+  def self.valid_api_key?(key)
+    find_by(api_key: key).present?
+  end
 end
