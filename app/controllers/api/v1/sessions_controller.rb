@@ -1,5 +1,6 @@
 class Api::V1::SessionsController < ApplicationController
   include UserValidator
+
   before_action :validate_user
 
   def create
