@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       resource :activities, only: :show
 
       resources :users, only: :create
+
+      resources :sessions, only: :create
     end
   end
 end
