@@ -17,11 +17,12 @@ jobs:
 
       # - name: Install dependent libraries
       #   run: apt-get install libpq-dev
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
 
       - name: Bundle install
         run: |
-          sudo rvm install 2.7.2
-          sudo rvm use 2.7.2 --default
           sudo gem install bundler
           sudo bundle install --jobs 4 --retry 3
 
