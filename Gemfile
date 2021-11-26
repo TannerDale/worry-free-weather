@@ -17,6 +17,7 @@ gem 'jsonapi-serializer'
 
 group :development, :test do
   gem 'pry'
+  gem 'rspec_junit_formatter'
 end
 
 group :test do
