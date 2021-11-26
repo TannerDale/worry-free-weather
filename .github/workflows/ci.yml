@@ -14,18 +14,14 @@ jobs:
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
     steps:
       - uses: actions/checkout@v2
-
-      # - name: Install dependent libraries
-      #   run: apt-get install libpq-dev
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7.2'
-          bundler-cache: true
 
-      # - name: Bundle install
-      #   run: |
-      #     sudo gem install bundler
-      #     sudo bundle install --jobs 4 --retry 3
+      - name: Bundle install
+        run: |
+          sudo gem install bundler
+          sudo bundle install --jobs 4 --retry 3
 
       - name: Setup Database
         run: |
