@@ -36,10 +36,10 @@ jobs: # a collection of steps
           command: bundle -v
       # Restore bundle cache
       # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
-      - restore_cache:
-          keys:
-            - [worry-free-weather]-bundle-v2-{{ checksum 'Gemfile.lock' }}
-            - [worry-free-weather]-bundle-v2-
+      # - restore_cache:
+      #     keys:
+      #       - [worry-free-weather]-bundle-v2-{{ checksum 'Gemfile.lock' }}
+      #       - [worry-free-weather]-bundle-v2-
       - run: # Install Ruby dependencies
           name: bundle Install
           command: bundle check --path vendor/bundle || bundle install --deployment
