@@ -14,14 +14,14 @@ jobs:
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
     steps:
       - uses: actions/checkout@v1
-        with:
-          ruby-version: 2.7.2
 
       # - name: Install dependent libraries
       #   run: apt-get install libpq-dev
 
       - name: Bundle install
         run: |
+          sudo rvm install 2.7.2
+          sudo rvm use 2.7.2 --default
           sudo gem install bundler
           sudo bundle install --jobs 4 --retry 3
 
