@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Install dependent libraries
-        run: sudo apt-get install libpq-dev
+      # - name: Install dependent libraries
+      #   run: apt-get install libpq-dev
 
       - name: Bundle install
         run: |
