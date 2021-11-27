@@ -6,6 +6,7 @@ ruby '~> 2.7.0'
 gem 'rails', '~> 5.2.6'
 
 gem 'pg', '>= 0.18', '< 2.0'
+
 gem 'puma', '~> 3.11'
 
 gem 'bcrypt', '~> 3.1.7'
